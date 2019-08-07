@@ -1,0 +1,14 @@
+mixin article(title)
+  .article
+    .article-wrapper
+      h1= title
+      if block
+        block
+      else
+        p No Content
+ 
++article('Hello pug')
+ 
++article('Hello pug')
+  p This is an 
+  p article of Node.js

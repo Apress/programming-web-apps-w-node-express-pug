@@ -1,0 +1,14 @@
+- var user = { description: 'Mustertext' }
+- var authorised = false
+#user
+  if user.description
+    h2 Beschreibung
+    p.description= user.description
+  else if authorised
+    h2 Beschreibung
+    p.description.
+      Benutzer hat keine Beschreibung,
+      füge eine hinzu...
+  else
+    h1 Beschreibung
+    p.description Benutzer hat keine Beschreibung

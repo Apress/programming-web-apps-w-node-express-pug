@@ -1,0 +1,10 @@
+extends layout
+
+block scripts
+  script(src='scripts/jquery.js')
+  script(src='scripts/data.js')
+
+block content
+  h1= title
+  each pet in pets
+    include pet
